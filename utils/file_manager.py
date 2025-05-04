@@ -6,7 +6,6 @@ class FileManager:
     Class untuk mengatur penyimpanan dan pembacaan data ke file CSV.
     """
 
-    @staticmethod
     def save_inventory(filename, inventory):
         """
         Menyimpan semua data inventory ke file CSV.
@@ -19,7 +18,6 @@ class FileManager:
                 writer.writerow([current.id_barang, current.nama, current.kategori, current.harga, current.stok])
                 current = current.next
 
-    @staticmethod
     def load_inventory(filename, inventory):
         """
         Membaca data dari file CSV ke inventory.
